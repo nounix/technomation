@@ -1,0 +1,11 @@
+image: busybox
+
+pages:
+  stage: deploy
+  script:
+    - echo "Copying public dir..."
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
